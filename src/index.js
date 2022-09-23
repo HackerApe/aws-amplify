@@ -5,7 +5,6 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 
-// Configure AWS
 Amplify.configure(config);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
