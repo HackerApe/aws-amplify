@@ -62,7 +62,7 @@ const App = ({ signOut }) => {
 		event.target.reset()
 	}
 
-	const deleteNote = async ({ id }) => {
+	const deleteNote = async ({ id, name }) => {
 		const newNotesArray = notes.filter((note) => note.id !== id)
 		setNotes(newNotesArray)
 		await Storage.remove(name)
